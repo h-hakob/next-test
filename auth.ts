@@ -39,6 +39,9 @@ const config = {
   ],
   basePath: "/auth",
   callbacks: {
+    signIn: () {
+      return "/dashboard";
+    },
     authorized({ request, auth }) {
       const { pathname } = request.nextUrl
 
