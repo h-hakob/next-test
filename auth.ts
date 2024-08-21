@@ -42,7 +42,7 @@ const config = {
     authorized({ request, auth }) {
       const { pathname } = request.nextUrl
 
-      if (pathname !== "/auth/signin") return !!auth
+      if (!pathname.includes("/auth/")) return !!auth
 
       return true
     },
