@@ -29,7 +29,8 @@ const config = {
           }
         });
 
-        if (!user || !compareSync(credentials.password as string, user.password)) {
+        if (!user || credentials.password as string !== user.password) {
+        // if (!user || !compareSync(credentials.password as string, user.password)) {
           return null;
         }
 
