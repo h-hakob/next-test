@@ -14,7 +14,7 @@ export const GET = auth(async (req) => {
       }
 
       return Response.json({ data: data[0] })
-    // }
+    }
   
     return Response.json({ message: "Not authenticated" }, { status: 401 })
   })
