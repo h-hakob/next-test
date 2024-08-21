@@ -10,8 +10,7 @@ async function main() {
       data: {
           name: "user",
           email: "user@user.com",
-          // password: hashSync("12345678", 10)
-          password: "12345678"
+          password: hashSync("12345678", 10)
       }
     });
 
